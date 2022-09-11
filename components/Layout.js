@@ -1,10 +1,11 @@
 import Head from 'next/head';
 import { Box, Flex } from '@chakra-ui/react';
 import Sidebar from './sidebar';
+import SnippetsArea from './snippetsArea';
 
 const Layout = ({ children, title, description }) => {
     return (
-        <Box as="main" bg="gray.200">
+        <Box bg="gray.50">
             <Head>
                 <title>{title}</title>
                 <meta name="description" content={description} />
@@ -12,6 +13,7 @@ const Layout = ({ children, title, description }) => {
             </Head>
             <Flex direction="row">
                 <Sidebar />
+                <SnippetsArea />
                 {children}
             </Flex>
         </Box>

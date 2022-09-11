@@ -6,6 +6,7 @@ import {
     Spacer,
     Collapse,
     useDisclosure,
+    calc,
 } from '@chakra-ui/react';
 import SidebarItem from './SidebarItem';
 
@@ -28,7 +29,10 @@ const SidebarSection = ({ children, sectionIcon, sectionTitle }) => {
                 />
             </Box>
             <Collapse in={isOpen} animateOpacity>
-                <VStack spacing={0} marginInlineStart="calc(2rem)">
+                <VStack
+                    spacing={0}
+                    paddingInlineStart="calc(0.875rem + 0.5rem)"
+                >
                     {children}
                 </VStack>
             </Collapse>

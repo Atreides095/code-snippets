@@ -6,7 +6,7 @@ import { GoCode } from 'react-icons/go';
 
 import NextLink from 'next/link';
 import SidebarItem from './SidebarItem';
-import SidebarSection from './sidebarSection';
+import SidebarSection from './SidebarSection';
 
 const Logo = () => (
     <NextLink href="/" passHref>
@@ -14,7 +14,7 @@ const Logo = () => (
             <Heading
                 as="h1"
                 color="white"
-                size="lg"
+                size="md"
                 fontFamily="'Roboto', sans-serif"
             >
                 CodeSnippets
@@ -29,24 +29,25 @@ const Sidebar = () => {
             as="aside"
             color="gray.50"
             h="100vh"
-            w={80}
+            w={60}
             paddingBlockStart={8}
             bg="gray.800"
+            spacing={0}
         >
             <Logo />
-            <Box w="full" px={8} py={6}>
+            <Box w="full" paddingBlockStart={6} paddingBlockEnd={4} px={4}>
                 <Button
                     variant="solid"
                     colorScheme="cyan"
                     color="gray.50"
                     rounded="sm"
-                    size="lg"
+                    size="sm"
                     w="full"
                 >
                     NEW SNIPPET
                 </Button>
             </Box>
-            <VStack w="full" spacing={6} flex={1} overflowY="auto">
+            <VStack w="full" spacing={4} overflowY="auto" flexGrow={1}>
                 <VStack w="full" spacing={0}>
                     <SidebarItem
                         icon={AiOutlineUnorderedList}

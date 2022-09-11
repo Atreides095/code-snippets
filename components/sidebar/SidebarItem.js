@@ -8,18 +8,16 @@ const SidebarItem = ({ icon, text, count, isTitle, active }) => {
             color={isTitle && 'gray.400'}
             dir="row"
             align="center"
-            gap={4}
-            fontSize="md"
-            // py={2}
-            py={isTitle ? 0 : 2}
-            px={8}
+            gap={2}
+            fontSize="sm"
+            py={isTitle ? 0 : 1}
+            px={4}
             w="full"
             cursor="pointer"
             userSelect="none"
             _hover={
                 !isTitle && {
                     color: 'cyan.300',
-                    // bg: 'green',
                 }
             }
             _active={
