@@ -39,7 +39,7 @@ const SnippetsBar = () => {
                     <Input
                         type="text"
                         variant="outline"
-                        placeHolder="search"
+                        placeholder="search"
                         outline="1px solid"
                         outlineColor="gray.400"
                         bg="gray.50"

@@ -11,7 +11,7 @@ const Layout = ({ children, title, description }) => {
                 <meta name="description" content={description} />
                 <meta name="author" content="Erick Aguilar" />
             </Head>
-            <Flex direction="row">
+            <Flex direction="row" overflow="hidden">
                 <Sidebar />
                 <SnippetsArea />
                 {children}
